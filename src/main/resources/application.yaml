@@ -1,0 +1,28 @@
+schedule:
+  enable: false
+  clear:
+    schedule:
+      log: 0 * * * * *
+    realtime: 0 * * * * *
+    cancel:
+      ticket:
+        impossible: 0 * * * * *
+  retry:
+    send:
+      rest: 0 * * * * *
+  charge:
+    summary: 0 * * * * *
+  create:
+    booking:
+      on:
+        ba: 0 * * * * *
+  sysnc:
+    location: 0 0 0 * * *
+    department: 0 0 0 * * *
+    user: 0 0 0 * * *
+
+recurrence:
+  daily:
+    default: MON,TUE,WED,THU,FRI
+
+# https://tunghuynh.net/programer/java/2319/java-phan-16-tao-tien-trinh-chay-ngam-cuc-ky-don-gian-voi-spring-schedule/
