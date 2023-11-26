@@ -1,13 +1,13 @@
 schedule:
-  enable: false
+  enabled: false
   clear:
     schedule:
-      log: 0 * * * * *
+      log: 0 0 0 * * *
     realtime: 0 * * * * *
-    cancel:
-      ticket:
-        impossible: 0 * * * * *
-  retry:
+  cancel:
+    ticket:
+      impossible: 0 * * * * *
+  retrky:
     send:
       rest: 0 * * * * *
   charge:
